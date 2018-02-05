@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    >
+    <LinearLayout
+        android:id="@+id/linnne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:orientation="horizontal">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/simple"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            fresco:roundedCornerRadius="5dp"
+            fresco:roundBottomLeft="false"
+            fresco:roundBottomRight="false"
+            fresco:roundingBorderWidth="1dp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="天蝎喝牛奶"/>
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2017-05-23"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_frag1_pingbi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true"
+        android:gravity="center_horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_frag1_item_pingbi"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/shiled1" />
+
+        <TextView
+            android:id="@+id/tv_frag1_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="屏蔽"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_frag1_copy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true"
+        android:gravity="center_horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_frag1_item_copylink"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/copylink1"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:id="@+id/tv_frag1_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="链接"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_frag1_jubao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true"
+        android:gravity="center_horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_frag1_item_jubao"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/report1"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:id="@+id/tv_frag1_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="举报"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_frag1_item_jia"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/icon_open" />
+    <TextView
+        android:id="@+id/name"
+        android:layout_below="@+id/linnne"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:text="天气美美的,适合郊游"/>
+</RelativeLayout>
